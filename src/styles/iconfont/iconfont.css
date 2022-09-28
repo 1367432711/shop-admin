@@ -1,0 +1,167 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3528975 */
+  src: url('iconfont.woff2?t=1658123920958') format('woff2'),
+       url('iconfont.woff?t=1658123920958') format('woff'),
+       url('iconfont.ttf?t=1658123920958') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconweixin-copy:before {
+  content: "\e65b";
+}
+
+.iconqq-copy-copy:before {
+  content: "\e65c";
+}
+
+.iconshouji:before {
+  content: "\e600";
+}
+
+.iconbarrage_fill:before {
+  content: "\e6e3";
+}
+
+.iconbarrage:before {
+  content: "\e6e4";
+}
+
+.iconbrowse_fill:before {
+  content: "\e6e5";
+}
+
+.iconbrowse:before {
+  content: "\e6e6";
+}
+
+.iconbrush:before {
+  content: "\e6e7";
+}
+
+.iconbrush_fill:before {
+  content: "\e6e8";
+}
+
+.iconbusinesscard_fill:before {
+  content: "\e6e9";
+}
+
+.iconbusinesscard:before {
+  content: "\e6ea";
+}
+
+.iconcollection_fill:before {
+  content: "\e6eb";
+}
+
+.iconcollection:before {
+  content: "\e6ec";
+}
+
+.iconcomputer_fill:before {
+  content: "\e6ed";
+}
+
+.iconcomputer:before {
+  content: "\e6ee";
+}
+
+.iconcoordinates_fill:before {
+  content: "\e6ef";
+}
+
+.iconcoordinates:before {
+  content: "\e6f0";
+}
+
+.iconeditor:before {
+  content: "\e6f5";
+}
+
+.iconflashlight:before {
+  content: "\e6fc";
+}
+
+.iconflashlight_fill:before {
+  content: "\e6fd";
+}
+
+.iconintegral_fill:before {
+  content: "\e703";
+}
+
+.iconintegral:before {
+  content: "\e704";
+}
+
+.iconinteractive_fill:before {
+  content: "\e705";
+}
+
+.iconinteractive:before {
+  content: "\e706";
+}
+
+.iconlabel:before {
+  content: "\e707";
+}
+
+.iconlabel_fill:before {
+  content: "\e708";
+}
+
+.iconlike_fill:before {
+  content: "\e709";
+}
+
+.iconlike:before {
+  content: "\e70a";
+}
+
+.iconmail:before {
+  content: "\e70b";
+}
+
+.iconmail_fill:before {
+  content: "\e70c";
+}
+
+.iconmessage:before {
+  content: "\e70d";
+}
+
+.iconmessage_fill:before {
+  content: "\e70e";
+}
+
+.iconpraise_fill:before {
+  content: "\e71a";
+}
+
+.iconpraise:before {
+  content: "\e71b";
+}
+
+.iconremind_fill:before {
+  content: "\e71f";
+}
+
+.iconremind:before {
+  content: "\e720";
+}
+
+.iconshare_fill:before {
+  content: "\e729";
+}
+
+.iconshare:before {
+  content: "\e72a";
+}
+

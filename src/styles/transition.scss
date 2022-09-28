@@ -1,0 +1,14 @@
+/* slide transition 左进右出效果 */
+.slide-enter-active,
+.slide-leave-active {
+  transition: 0.5s ease;
+}
+
+.slide-enter-from {
+  transform: translateX(-50px);
+  opacity: 0;
+}
+.slide-leave-to {
+  transform: translateX(50px);
+  opacity: 0;
+}
