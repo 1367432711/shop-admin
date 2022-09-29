@@ -112,7 +112,7 @@ const copy = () => {
             class="slide on"
           >
             <img
-              src="../../../../public/images/1400_902_8be26809677c4e649d162ce1df474803.jpg"
+              src="@public/images/1400_902_8be26809677c4e649d162ce1df474803.jpg"
             >
           </div>
           <img
@@ -295,7 +295,7 @@ const copy = () => {
                 rel=""
               ><img
                 lazy__=""
-                src="../../../../public/images/608_418_4f3b460a913548449e3e2c12c305a299.jpg"
+                src="@public/images/608_418_4f3b460a913548449e3e2c12c305a299.jpg"
               ></a>
             </div>
             <div class="text">
@@ -321,7 +321,7 @@ const copy = () => {
                 rel=""
               ><img
                 lazy__=""
-                src="../../../../public/images/608_418_6e66fa414faa4542af3f84ea689f16b5.jpg"
+                src="@public/images/608_418_6e66fa414faa4542af3f84ea689f16b5.jpg"
               ></a>
             </div>
             <div class="text">
@@ -347,7 +347,7 @@ const copy = () => {
                 rel=""
               ><img
                 lazy__=""
-                src="../../../../public/images/608_418_300146ab35e2410183f6bf19dc2fef52.jpg"
+                src="@public/images/608_418_300146ab35e2410183f6bf19dc2fef52.jpg"
               ></a>
             </div>
             <div class="text">
@@ -373,7 +373,7 @@ const copy = () => {
                 rel=""
               ><img
                 lazy__=""
-                src="../../../../public/images/608_418_c44bb086ac0b4152a52398d624f6858b.jpg"
+                src="@public/images/608_418_c44bb086ac0b4152a52398d624f6858b.jpg"
               ></a>
             </div>
             <div class="text">

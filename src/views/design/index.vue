@@ -18,7 +18,7 @@
                   ><img
                     alt="Dribbble"
                     lazy__=""
-                    src="../../../../public/images/225_225_dc2b5666a0a849ea824b5bb5f991a183.png"
+                    src="@public/images/225_225_f1c6b782fdd44c188e28f0a8bcaf210c.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -45,7 +45,7 @@
                   ><img
                     alt="Behance"
                     lazy__=""
-                    src="../../../../public/images/225_225_f1c6b782fdd44c188e28f0a8bcaf210c.png"
+                    src="@public/images/225_225_f1c6b782fdd44c188e28f0a8bcaf210c.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -72,7 +72,7 @@
                   ><img
                     alt="美叶"
                     lazy__=""
-                    src="../../../../public/images/200_200_340d74b7e8d64d46832522fae193ce11.jpg"
+                    src="@public/images/200_200_340d74b7e8d64d46832522fae193ce11.jpg"
                   ></a>
                 </div>
                 <div class="text">
@@ -99,7 +99,7 @@
                   ><img
                     alt="Pattern Collection"
                     lazy__=""
-                    src="../../../../public/images/200_200_4e486c9369a44419a06b713ccaf1466c.jpg"
+                    src="@public/images/200_200_4e486c9369a44419a06b713ccaf1466c.jpg"
                   ></a>
                 </div>
                 <div class="text">
@@ -126,7 +126,7 @@
                   ><img
                     alt="awwwards"
                     lazy__=""
-                    src="../../../../public/images/156_157_8ba2f348022a4f06a5967e6ac0a689a0.png"
+                    src="@public/images/156_157_8ba2f348022a4f06a5967e6ac0a689a0.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -153,7 +153,7 @@
                   ><img
                     alt="Pinterest"
                     lazy__=""
-                    src="../../../../public/images/225_225_be8c431c216246d4ae74b372378c9354.png"
+                    src="@public/images/225_225_be8c431c216246d4ae74b372378c9354.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -180,7 +180,7 @@
                   ><img
                     alt="花瓣"
                     lazy__=""
-                    src="../../../../public/images/318_320_bf794f898ec24bc196a7964b35821c5b.png"
+                    src="@public/images/318_320_bf794f898ec24bc196a7964b35821c5b.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -207,7 +207,7 @@
                   ><img
                     alt="站酷"
                     lazy__=""
-                    src="../../../../public/images/2000_2000_32ce59bc004446feb62a86ce8f4f5e09.jpg"
+                    src="@public/images/2000_2000_32ce59bc004446feb62a86ce8f4f5e09.jpg"
                   ></a>
                 </div>
                 <div class="text">
@@ -234,7 +234,7 @@
                   ><img
                     alt="UI中国"
                     lazy__=""
-                    src="../../../../public/images/256_256_6666d666797e4353bdb66147cb5c9c1d.png"
+                    src="@public/images/256_256_6666d666797e4353bdb66147cb5c9c1d.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -270,7 +270,7 @@
                   ><img
                     alt="XD官方免费正版下载"
                     lazy__=""
-                    src="../../../../public/images/200_200_b58e769fdc6b4fc6b881080241746eff.jpg"
+                    src="@public/images/200_200_b58e769fdc6b4fc6b881080241746eff.jpg"
                   ></a>
                 </div>
                 <div class="text">
@@ -297,7 +297,7 @@
                   ><img
                     alt="Blender"
                     lazy__=""
-                    src="../../../../public/images/200_200_2a748751faa44ac09a85626063d3c531.jpg"
+                    src="@public/images/200_200_2a748751faa44ac09a85626063d3c531.jpg"
                   ></a>
                 </div>
                 <div class="text">
@@ -324,7 +324,7 @@
                   ><img
                     alt="origami studio"
                     lazy__=""
-                    src="../../../../public/images/200_200_14e096d2f08d4496a071b2f33ad4873a.png"
+                    src="@public/images/200_200_14e096d2f08d4496a071b2f33ad4873a.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -351,7 +351,7 @@
                   ><img
                     alt="vectary"
                     lazy__=""
-                    src="../../../../public/images/200_200_cfce72e8eb0b409f9a1e0fd1380b8808.png"
+                    src="@public/images/200_200_cfce72e8eb0b409f9a1e0fd1380b8808.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -378,7 +378,7 @@
                   ><img
                     alt="Spline"
                     lazy__=""
-                    src="../../../../public/images/200_200_73dfb8f21b6b4aa289f811d8306eac18.png"
+                    src="@public/images/200_200_73dfb8f21b6b4aa289f811d8306eac18.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -405,7 +405,7 @@
                   ><img
                     alt="标记狮"
                     lazy__=""
-                    src="../../../../public/images/200_200_66389c0129834506a2c597d599cfa987.png"
+                    src="@public/images/200_200_66389c0129834506a2c597d599cfa987.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -432,7 +432,7 @@
                   ><img
                     alt="Icon Shelf "
                     lazy__=""
-                    src="../../../../public/images/200_200_36a9f4e97061410f88a618b7085b03eb.jpg"
+                    src="@public/images/200_200_36a9f4e97061410f88a618b7085b03eb.jpg"
                   ></a>
                 </div>
                 <div class="text">
@@ -459,7 +459,7 @@
                   ><img
                     alt="Mesh·y"
                     lazy__=""
-                    src="../../../../public/images/200_200_3b627a0cf9c2496592012b81095a0414.jpg"
+                    src="@public/images/200_200_3b627a0cf9c2496592012b81095a0414.jpg"
                   ></a>
                 </div>
                 <div class="text">
@@ -486,7 +486,7 @@
                   ><img
                     alt="fffuel"
                     lazy__=""
-                    src="../../../../public/images/200_200_348bcff11a5e49a6a87e188c1b555505.jpg"
+                    src="@public/images/200_200_348bcff11a5e49a6a87e188c1b555505.jpg"
                   ></a>
                 </div>
                 <div class="text">
@@ -513,7 +513,7 @@
                   ><img
                     alt="duotone"
                     lazy__=""
-                    src="../../../../public/images/200_200_cafab421e0cf49e88d0e3b225c991cb9.jpg"
+                    src="@public/images/200_200_cafab421e0cf49e88d0e3b225c991cb9.jpg"
                   ></a>
                 </div>
                 <div class="text">
@@ -540,7 +540,7 @@
                   ><img
                     alt="Mockup Generator"
                     lazy__=""
-                    src="../../../../public/images/200_200_db3bde6059ba499bbfa5447db1a775d5.jpg"
+                    src="@public/images/200_200_db3bde6059ba499bbfa5447db1a775d5.jpg"
                   ></a>
                 </div>
                 <div class="text">
@@ -568,7 +568,7 @@
                   ><img
                     alt="Text Chat Animator"
                     lazy__=""
-                    src="../../../../public/images/200_200_e74c2eb38bce4458b08daeb3a59bf742.jpg"
+                    src="@public/images/200_200_e74c2eb38bce4458b08daeb3a59bf742.jpg"
                   ></a>
                 </div>
                 <div class="text">
@@ -595,7 +595,7 @@
                   ><img
                     alt="Eagle"
                     lazy__=""
-                    src="../../../../public/images/200_200_2a6211eded2c458ab867f98b5158f696.png"
+                    src="@public/images/200_200_2a6211eded2c458ab867f98b5158f696.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -622,7 +622,7 @@
                   ><img
                     alt="removebg"
                     lazy__=""
-                    src="../../../../public/images/200_200_cf73882e447b44ec87a5c9b267686200.png"
+                    src="@public/images/200_200_cf73882e447b44ec87a5c9b267686200.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -649,7 +649,7 @@
                   ><img
                     alt="animockup"
                     lazy__=""
-                    src="../../../../public/images/200_200_44d5392d7d694086924a912ac65b6078.png"
+                    src="@public/images/200_200_44d5392d7d694086924a912ac65b6078.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -676,7 +676,7 @@
                   ><img
                     alt="Smallpdf"
                     lazy__=""
-                    src="../../../../public/images/200_200_4f7b07bd385d4674a73b807e74e8f25a.png"
+                    src="@public/images/200_200_4f7b07bd385d4674a73b807e74e8f25a.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -703,7 +703,7 @@
                   ><img
                     alt="在线PS"
                     lazy__=""
-                    src="../../../../public/images/200_200_39febb205b1b4ff6b7e705ee4bba8b98.png"
+                    src="@public/images/200_200_39febb205b1b4ff6b7e705ee4bba8b98.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -730,7 +730,7 @@
                   ><img
                     alt="lunacy"
                     lazy__=""
-                    src="../../../../public/images/200_200_1ed1f3455fe743aaafc9f948ed50c679.png"
+                    src="@public/images/200_200_1ed1f3455fe743aaafc9f948ed50c679.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -757,7 +757,7 @@
                   ><img
                     alt="gifcompressor"
                     lazy__=""
-                    src="../../../../public/images/200_200_126a9c09f5ac4335883d109ef8afdbb9.png"
+                    src="@public/images/200_200_126a9c09f5ac4335883d109ef8afdbb9.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -784,7 +784,7 @@
                   ><img
                     alt="Tiny png"
                     lazy__=""
-                    src="../../../../public/images/269_253_b5b64c74c3fd49c7a24f0b20a1a4eb21.png"
+                    src="@public/images/269_253_b5b64c74c3fd49c7a24f0b20a1a4eb21.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -820,7 +820,7 @@
                   ><img
                     alt="SF Symbols"
                     lazy__=""
-                    src="../../../../public/images/200_200_aa64f10208d64c539ac47dda078a28c8.png"
+                    src="@public/images/200_200_aa64f10208d64c539ac47dda078a28c8.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -847,7 +847,7 @@
                   ><img
                     alt="IconPark"
                     lazy__=""
-                    src="../../../../public/images/200_200_67a0f0b06e4c49b9baed797f6ecf1f23.png"
+                    src="@public/images/200_200_67a0f0b06e4c49b9baed797f6ecf1f23.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -874,7 +874,7 @@
                   ><img
                     alt="iconfont"
                     lazy__=""
-                    src="../../../../public/images/200_200_c12bfbbde3c542f0b9c6859af11e4195.png"
+                    src="@public/images/200_200_c12bfbbde3c542f0b9c6859af11e4195.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -901,7 +901,7 @@
                   ><img
                     alt="Vertex"
                     lazy__=""
-                    src="../../../../public/images/200_200_0611f17e04b44b098199f99da745c83b.jpg"
+                    src="@public/images/200_200_0611f17e04b44b098199f99da745c83b.jpg"
                   ></a>
                 </div>
                 <div class="text">
@@ -928,7 +928,7 @@
                   ><img
                     alt="Nucleo"
                     lazy__=""
-                    src="../../../../public/images/200_200_5ab99c18dbc54292958483b97d3b6902.jpg"
+                    src="@public/images/200_200_5ab99c18dbc54292958483b97d3b6902.jpg"
                   ></a>
                 </div>
                 <div class="text">
@@ -955,7 +955,7 @@
                   ><img
                     alt="Tabbied"
                     lazy__=""
-                    src="../../../../public/images/200_200_7e74b9975b2347dc994ae10fad66e276.jpg"
+                    src="@public/images/200_200_7e74b9975b2347dc994ae10fad66e276.jpg"
                   ></a>
                 </div>
                 <div class="text">
@@ -982,7 +982,7 @@
                   ><img
                     alt="Steamline"
                     lazy__=""
-                    src="../../../../public/images/200_200_d719aef0ac5e45468b10b28c478880d6.jpg"
+                    src="@public/images/200_200_d719aef0ac5e45468b10b28c478880d6.jpg"
                   ></a>
                 </div>
                 <div class="text">
@@ -1009,7 +1009,7 @@
                   ><img
                     alt="Boring Avatars"
                     lazy__=""
-                    src="../../../../public/images/200_200_3c198a9ae72345cb8d97c783d837d991.jpg"
+                    src="@public/images/200_200_3c198a9ae72345cb8d97c783d837d991.jpg"
                   ></a>
                 </div>
                 <div class="text">
@@ -1036,7 +1036,7 @@
                   ><img
                     alt="Shapefest"
                     lazy__=""
-                    src="../../../../public/images/200_200_c4cc0226bd194c06a1c66c3dfc638539.jpg"
+                    src="@public/images/200_200_c4cc0226bd194c06a1c66c3dfc638539.jpg"
                   ></a>
                 </div>
                 <div class="text">
@@ -1063,7 +1063,7 @@
                   ><img
                     alt="Lordicon动态图标库"
                     lazy__=""
-                    src="../../../../public/images/200_200_e21ffd9af08040daa94f99b5f41450f4.jpg"
+                    src="@public/images/200_200_e21ffd9af08040daa94f99b5f41450f4.jpg"
                   ></a>
                 </div>
                 <div class="text">
@@ -1090,7 +1090,7 @@
                   ><img
                     alt="designstripe"
                     lazy__=""
-                    src="../../../../public/images/200_200_299a6c9ce10f45a6ab5903cc02343c9f.png"
+                    src="@public/images/200_200_299a6c9ce10f45a6ab5903cc02343c9f.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -1117,7 +1117,7 @@
                   ><img
                     alt="Iconduck"
                     lazy__=""
-                    src="../../../../public/images/200_200_6b2273b6784c43f2a775e3935d2df885.jpg"
+                    src="@public/images/200_200_6b2273b6784c43f2a775e3935d2df885.jpg"
                   ></a>
                 </div>
                 <div class="text">
@@ -1144,7 +1144,7 @@
                   ><img
                     alt="Google Fonts"
                     lazy__=""
-                    src="../../../../public/images/200_200_26cb68a69cc443bc98bd151fed6f9945.jpg"
+                    src="@public/images/200_200_26cb68a69cc443bc98bd151fed6f9945.jpg"
                   ></a>
                 </div>
                 <div class="text">
@@ -1171,7 +1171,7 @@
                   ><img
                     alt="illustrationkit"
                     lazy__=""
-                    src="../../../../public/images/200_200_a415508d6f3a4f0092fd43c2d6f706f2.jpg"
+                    src="@public/images/200_200_a415508d6f3a4f0092fd43c2d6f706f2.jpg"
                   ></a>
                 </div>
                 <div class="text">
@@ -1198,7 +1198,7 @@
                   ><img
                     alt="Scale"
                     lazy__=""
-                    src="../../../../public/images/200_200_4d16881aa74c4e4b9e31f81449e055b2.jpg"
+                    src="@public/images/200_200_4d16881aa74c4e4b9e31f81449e055b2.jpg"
                   ></a>
                 </div>
                 <div class="text">
@@ -1225,7 +1225,7 @@
                   ><img
                     alt="Sapiens"
                     lazy__=""
-                    src="../../../../public/images/200_200_8ed6b372ce8c4a5cac1b5d26340913ff.png"
+                    src="@public/images/200_200_8ed6b372ce8c4a5cac1b5d26340913ff.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -1252,7 +1252,7 @@
                   ><img
                     alt="openpeeps"
                     lazy__=""
-                    src="../../../../public/images/200_200_95021e1394b94d849220e4d89ed44172.png"
+                    src="@public/images/200_200_95021e1394b94d849220e4d89ed44172.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -1279,7 +1279,7 @@
                   ><img
                     alt="unDraw"
                     lazy__=""
-                    src="../../../../public/images/200_200_f1944dc7a44f4bb384ba34845feda4d1.png"
+                    src="@public/images/200_200_f1944dc7a44f4bb384ba34845feda4d1.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -1315,7 +1315,7 @@
                   ><img
                     alt="PAG"
                     lazy__=""
-                    src="../../../../public/images/200_200_9e704362cf1943488a34d0feb085ac39.jpg"
+                    src="@public/images/200_200_9e704362cf1943488a34d0feb085ac39.jpg"
                   ></a>
                 </div>
                 <div class="text">
@@ -1342,7 +1342,7 @@
                   ><img
                     alt="haikuanimator"
                     lazy__=""
-                    src="../../../../public/images/200_200_eb8cbd4f1dc046a5b99703663e9547ee.png"
+                    src="@public/images/200_200_eb8cbd4f1dc046a5b99703663e9547ee.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -1369,7 +1369,7 @@
                   ><img
                     alt="SVGater"
                     lazy__=""
-                    src="../../../../public/images/200_200_df483a8f363c41318fb4ad4526210f0a.png"
+                    src="@public/images/200_200_df483a8f363c41318fb4ad4526210f0a.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -1396,7 +1396,7 @@
                   ><img
                     alt="犸良动画"
                     lazy__=""
-                    src="../../../../public/images/200_200_37aec654098147298b752c3cbdeba33e.png"
+                    src="@public/images/200_200_37aec654098147298b752c3cbdeba33e.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -1423,7 +1423,7 @@
                   ><img
                     alt="LottieFiles"
                     lazy__=""
-                    src="../../../../public/images/200_200_c6c30c24d6824e6fab08b4c8b067ecbf.png"
+                    src="@public/images/200_200_c6c30c24d6824e6fab08b4c8b067ecbf.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -1459,7 +1459,7 @@
                   ><img
                     alt="upsplash"
                     lazy__=""
-                    src="../../../../public/images/200_200_0969caea84e34308b234e9762074d386.png"
+                    src="@public/images/200_200_0969caea84e34308b234e9762074d386.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -1486,7 +1486,7 @@
                   ><img
                     alt="Pixabay"
                     lazy__=""
-                    src="../../../../public/images/200_200_817e069ecf9e4c009ea6c9752e696e8e.png"
+                    src="@public/images/200_200_817e069ecf9e4c009ea6c9752e696e8e.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -1513,7 +1513,7 @@
                   ><img
                     alt="Pexels"
                     lazy__=""
-                    src="../../../../public/images/200_200_eae8ae2183ed4d889f98482ff62fbb0a.png"
+                    src="@public/images/200_200_eae8ae2183ed4d889f98482ff62fbb0a.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -1540,7 +1540,7 @@
                   ><img
                     alt="freepik"
                     lazy__=""
-                    src="../../../../public/images/200_200_aeb30e39a27f4e3ca4f29b6b7fd8e234.png"
+                    src="@public/images/200_200_aeb30e39a27f4e3ca4f29b6b7fd8e234.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -1567,7 +1567,7 @@
                   ><img
                     alt="uppbeat"
                     lazy__=""
-                    src="../../../../public/images/200_200_d94e3e821f6c46e09f3d3bf12d077f64.png"
+                    src="@public/images/200_200_d94e3e821f6c46e09f3d3bf12d077f64.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -1603,7 +1603,7 @@
                   ><img
                     alt="字制区"
                     lazy__=""
-                    src="../../../../public/images/200_200_7471b270c5d043bbbe3366507a6ac6b6.jpg"
+                    src="@public/images/200_200_7471b270c5d043bbbe3366507a6ac6b6.jpg"
                   ></a>
                 </div>
                 <div class="text">
@@ -1630,7 +1630,7 @@
                   ><img
                     alt="字体天下"
                     lazy__=""
-                    src="../../../../public/images/200_200_9e531d6c8fc040579dc17c44e80a580a.png"
+                    src="@public/images/200_200_9e531d6c8fc040579dc17c44e80a580a.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -1657,7 +1657,7 @@
                   ><img
                     alt="likefont"
                     lazy__=""
-                    src="../../../../public/images/200_200_68e1b0a54b6b4040b0dbd5b37f7a7447.png"
+                    src="@public/images/200_200_68e1b0a54b6b4040b0dbd5b37f7a7447.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -1684,7 +1684,7 @@
                   ><img
                     alt="字魂"
                     lazy__=""
-                    src="../../../../public/images/200_200_1292e5a278a94eb0904b3155b3047333.png"
+                    src="@public/images/200_200_1292e5a278a94eb0904b3155b3047333.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -1711,7 +1711,7 @@
                   ><img
                     alt="字由"
                     lazy__=""
-                    src="../../../../public/images/200_200_3bb7f79ef3d5461cb7ed63c7f3bc2e21.png"
+                    src="@public/images/200_200_3bb7f79ef3d5461cb7ed63c7f3bc2e21.png"
                   ></a>
                 </div>
                 <div class="text">

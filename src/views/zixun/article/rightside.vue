@@ -154,7 +154,7 @@
                     rel=""
                   ><img
                     lazy__=""
-                    src="../../../../public/images/608_418_d45744fa1f444ab9b7a569479b4c5abb.jpg"
+                    src="@public/images/608_418_d45744fa1f444ab9b7a569479b4c5abb.jpg"
                   ></a>
                 </div>
                 <div class="text">
@@ -181,7 +181,7 @@
                     rel=""
                   ><img
                     lazy__=""
-                    src="../../../../public/images/1280_880_64ce7538dd1042229e6793a62550cb45.jpg"
+                    src="@public/images/1280_880_64ce7538dd1042229e6793a62550cb45.jpg"
                   ></a>
                 </div>
                 <div class="text">
@@ -207,7 +207,7 @@
                     rel=""
                   ><img
                     lazy__=""
-                    src="../../../../public/images/608_418_9473530fc94846459009b5c10031837b.png"
+                    src="@public/images/608_418_9473530fc94846459009b5c10031837b.png"
                   ></a>
                 </div>
                 <div class="text">
@@ -234,7 +234,7 @@
                     rel=""
                   ><img
                     lazy__=""
-                    src="../../../../public/images/1280_880_c80733f4633d4eb0ac384b2f2ac0cd17.jpg"
+                    src="@public/images/1280_880_c80733f4633d4eb0ac384b2f2ac0cd17.jpg"
                   ></a>
                 </div>
                 <div class="text">
@@ -260,7 +260,7 @@
                     rel=""
                   ><img
                     lazy__=""
-                    src="../../../../public/images/200_200_c34942062c0046d1bee0bc038ab3f7bd.jpg"
+                    src="@public/images/200_200_c34942062c0046d1bee0bc038ab3f7bd.jpg"
                   ></a>
                 </div>
                 <div class="text">
@@ -286,7 +286,7 @@
                     rel=""
                   ><img
                     lazy__=""
-                    src="../../../../public/images/1280_880_97da5519cf1a4036bc13f1c0997c15f8.jpg"
+                    src="@public/images/1280_880_97da5519cf1a4036bc13f1c0997c15f8.jpg"
                   ></a>
                 </div>
                 <div class="text">
@@ -312,7 +312,7 @@
                     rel=""
                   ><img
                     lazy__=""
-                    src="../../../../public/images/608_418_6d332ae593ab4b64b49b37de2339ddda.jpg"
+                    src="@public/images/608_418_6d332ae593ab4b64b49b37de2339ddda.jpg"
                   ></a>
                 </div>
                 <div class="text">
@@ -338,7 +338,7 @@
                     rel=""
                   ><img
                     lazy__=""
-                    src="../../../../public/images/1280_880_4500550a8d704508a94082e6824b8892.jpg"
+                    src="@public/images/1280_880_4500550a8d704508a94082e6824b8892.jpg"
                   ></a>
                 </div>
                 <div class="text">

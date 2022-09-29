@@ -1,3 +1,10 @@
+/*
+ * @FilePath: \shop-admin\vite.config.ts
+ * @Filename: ''
+ * @Author: 小豆
+ * @Date: 2022-09-29 07:26:07
+ * @LastEditTime: 2022-09-29 20:04:55
+ */
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import eslintPlugin from 'vite-plugin-eslint'
@@ -22,7 +29,8 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': path.join(__dirname, 'src')
+      '@': path.join(__dirname, 'src'),
+      '@public': path.join(__dirname, 'public')
     }
   },
   css: {
