@@ -3,7 +3,7 @@
  * @Author: 小豆
  * @Date: 2022-07-12 11:23:13
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2022-07-23 15:24:46
+ * @LastEditTime: 2022-10-03 10:05:57
 -->
 <template>
   <page-container>
@@ -67,22 +67,22 @@
 
 <script lang="ts" setup>
 const znList = [
-  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '@public/images/608_418_7cca8fdb80ad4af082e05568d810c6c5.png' },
-  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '@public/images/608_418_534d8a85c515428f9fbbd4cbba93d234.jpg' },
-  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '@public/images/608_418_7cca8fdb80ad4af082e05568d810c6c5.png' },
-  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '@public/images/608_418_534d8a85c515428f9fbbd4cbba93d234.jpg' },
-  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '@public/images/608_418_7cca8fdb80ad4af082e05568d810c6c5.png' },
-  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '@public/images/608_418_534d8a85c515428f9fbbd4cbba93d234.jpg' },
-  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '@public/images/608_418_7cca8fdb80ad4af082e05568d810c6c5.png' },
-  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '@public/images/608_418_534d8a85c515428f9fbbd4cbba93d234.jpg' },
-  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '@public/images/608_418_7cca8fdb80ad4af082e05568d810c6c5.png' },
-  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '@public/images/608_418_534d8a85c515428f9fbbd4cbba93d234.jpg' },
-  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '@public/images/608_418_7cca8fdb80ad4af082e05568d810c6c5.png' },
-  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '@public/images/608_418_534d8a85c515428f9fbbd4cbba93d234.jpg' },
-  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '@public/images/608_418_7cca8fdb80ad4af082e05568d810c6c5.png' },
-  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '@public/images/608_418_534d8a85c515428f9fbbd4cbba93d234.jpg' },
-  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '@public/images/608_418_7cca8fdb80ad4af082e05568d810c6c5.png' },
-  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '@public/images/608_418_534d8a85c515428f9fbbd4cbba93d234.jpg' }
+  { title: '35555很简单用Adobeillustrator 2022 3D功能做3D美食', image: '../../../../public/images/608_418_7cca8fdb80ad4af082e05568d810c6c5.png' },
+  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '../../../../public/images/608_418_534d8a85c515428f9fbbd4cbba93d234.jpg' },
+  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '../../../../public/images/608_418_7cca8fdb80ad4af082e05568d810c6c5.png' },
+  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '../../../../public/images/608_418_534d8a85c515428f9fbbd4cbba93d234.jpg' },
+  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '../../../../public/images/608_418_7cca8fdb80ad4af082e05568d810c6c5.png' },
+  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '../../../../public/images/608_418_534d8a85c515428f9fbbd4cbba93d234.jpg' },
+  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '../../../../public/images/608_418_7cca8fdb80ad4af082e05568d810c6c5.png' },
+  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '../../../../public/images/608_418_534d8a85c515428f9fbbd4cbba93d234.jpg' },
+  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '../../../../public/images/608_418_7cca8fdb80ad4af082e05568d810c6c5.png' },
+  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '../../../../public/images/608_418_534d8a85c515428f9fbbd4cbba93d234.jpg' },
+  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '../../../../public/images/608_418_7cca8fdb80ad4af082e05568d810c6c5.png' },
+  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '../../../../public/images/608_418_534d8a85c515428f9fbbd4cbba93d234.jpg' },
+  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '../../../../public/images/608_418_7cca8fdb80ad4af082e05568d810c6c5.png' },
+  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '../../../../public/images/608_418_534d8a85c515428f9fbbd4cbba93d234.jpg' },
+  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '../../../../public/images/608_418_7cca8fdb80ad4af082e05568d810c6c5.png' },
+  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '../../../../public/images/608_418_534d8a85c515428f9fbbd4cbba93d234.jpg' }
 ]
 </script>
 <style lang="scss" scoped > </style>

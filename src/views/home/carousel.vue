@@ -3,14 +3,14 @@
  * @Filename: '首页 顶部 第一部分 跑马灯'
  * @Author: 小豆
  * @Date: 2022-09-16 15:35:14
- * @LastEditTime: 2022-09-16 16:29:46
+ * @LastEditTime: 2022-10-03 09:57:43
 -->
 <script lang="ts" setup>
 const znList = [
-  { title: 'iPhone 14 Pro灵动岛详细UI笔记', url: '', type: '设计指南', image: '@public/images/1280_880_ecd8f2482f6845e5a2c0d545c326196a.jpg' },
-  { title: '使用emoji表情符号来管理Sketch页面', url: '', type: '设计指南', image: '@public/images/608_418_666b8b3cf086406b8a5c78916ec9cef9.jpg' },
-  { title: 'WWDC22丨 2022苹果设计大奖获奖名单', url: '', type: '行业动态', image: '@public/images/1280_880_a84ed0bfb5c44a2d948758ae018e4482.jpg' },
-  { title: '使用Adobe XD低版本打开高版本文件的方法', url: '', type: '行业动态', image: '@public/images/608_418_3351dd22b7a341d893a1015c8f162f3b.jpg' }
+  { title: 'iPhone 14 Pro灵动岛详细UI笔记', url: '', type: '设计指南', image: '../../../../public/images/1280_880_ecd8f2482f6845e5a2c0d545c326196a.jpg' },
+  { title: '使用emoji表情符号来管理Sketch页面', url: '', type: '设计指南', image: '../../../../public/images/608_418_666b8b3cf086406b8a5c78916ec9cef9.jpg' },
+  { title: 'WWDC22丨 2022苹果设计大奖获奖名单', url: '', type: '行业动态', image: '../../../../public/images/1280_880_a84ed0bfb5c44a2d948758ae018e4482.jpg' },
+  { title: '使用Adobe XD低版本打开高版本文件的方法', url: '', type: '行业动态', image: '../../../../public/images/608_418_3351dd22b7a341d893a1015c8f162f3b.jpg' }
 ]
 </script>
 <template>
