@@ -3,7 +3,7 @@
  * @Author: 小豆
  * @Date: 2022-07-11 09:58:10
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2022-09-09 16:34:29
+ * @LastEditTime: 2022-10-19 11:32:07
 -->
 <template>
   <el-container style="height:100vh;">
@@ -12,15 +12,16 @@
         <AppHeader />
       </el-header>
       <el-main>
-        <el-scrollbar>
-          <router-view v-slot="{ Component }">
+        <el-scrollbar ref="scrollbarRef">
+          <router-view v-slot="{ Component, route }">
             <transition
-              name="slide"
+              name="el-fade-in"
               mode="out-in"
             >
-              <keep-alive>
-                <component :is="Component" />
-              </keep-alive>
+              <component
+                :is="Component"
+                :key="route.path"
+              />
             </transition>
           </router-view>
           <el-footer>
@@ -37,12 +38,20 @@
 // import AppMenu from './AppMenu/index.vue'
 import AppHeader from './AppHeader/index.vue'
 import AppFooter from './AppFooter/index.vue'
+import { ref } from 'vue'
+import { ElScrollbar } from 'element-plus'
+import { useRouter } from 'vue-router'
+const scrollbarRef = ref<InstanceType<typeof ElScrollbar>>()
+const router = useRouter()
+router.beforeEach((to, from) => {
+  scrollbarRef.value!.setScrollTop(0)
+})
 
 </script>
 
 <style lang="scss" scoped>
 .el-main {
   color: #333;
-  --el-main-padding:0;
+  --el-main-padding: 0;
 }
 </style>

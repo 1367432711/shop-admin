@@ -3,7 +3,7 @@
  * @Author: 小豆
  * @Date: 2022-07-11 09:58:10
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2022-09-09 16:44:30
+ * @LastEditTime: 2022-10-19 11:35:01
  */
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 import AppLayout from '@/layout/AppLayout.vue'
@@ -61,7 +61,7 @@ const router = createRouter({
   routes // 路由规则
 })
 
-router.beforeEach((to, from, next) => {
+router.beforeEach((to, from) => {
   nprogress.start() // 开始加载进度条
   if (to.meta.requiresAuth && !store.state.user) {
     // 此路由需要授权，请检查是否已登录
@@ -72,13 +72,6 @@ router.beforeEach((to, from, next) => {
       query: { redirect: to.fullPath }
     }
   }
-  // chrome
-  document.body.scrollTop = 0
-  // firefox
-  document.documentElement.scrollTop = 0
-  // safari
-  window.pageYOffset = 0
-  next()
 })
 
 router.afterEach(() => {

@@ -1,3 +1,10 @@
+<!--
+ * @FilePath: \shop-admin\src\components\Icon\index.vue
+ * @Filename: ''
+ * @Author: 小豆
+ * @Date: 2022-09-29 07:33:30
+ * @LastEditTime: 2022-10-03 12:40:42
+-->
 <template>
   <i
     :class="[

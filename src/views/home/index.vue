@@ -282,7 +282,7 @@
                 title="XD更新头号玩家插件一直提示正在安装"
                 target="_blank"
                 rel="noopener nofollow"
-              >XD更新头号玩家插件一直提示正在安装</a>
+              >XD更新头号玩家正在安装</a>
             </li>
             <li>
               <a
