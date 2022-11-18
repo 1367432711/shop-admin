@@ -1,3 +1,10 @@
+/*
+ * @FilePath: \shop-admin\src\utils\request.ts
+ * @Filename: ''
+ * @Author: 小豆
+ * @Date: 2022-09-29 07:33:31
+ * @LastEditTime: 2022-10-28 16:53:22
+ */
 import axios, { AxiosRequestConfig } from 'axios'
 import { ElMessage, ElMessageBox } from 'element-plus'
 import { store } from '@/store'

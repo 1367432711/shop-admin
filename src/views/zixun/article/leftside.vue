@@ -1,7 +1,11 @@
 <script setup lang='ts'>
-import { computed, ref } from 'vue'
+import { onMounted, reactive, ref } from 'vue'
 import { ElNotification } from 'element-plus'
-
+import { getReply } from '@/api/article'
+import DividerHorizontal from '@/components/LeaveMessage/DividerHorizontal.vue'
+import CommentItem from '@/components/LeaveMessage/CommentItem.vue'
+import ReplyContainer from '@/components/LeaveMessage/ReplyContainer.vue'
+import ReplyBox from '@/components/LeaveMessage/ReplyBox.vue'
 const StarNum = ref()
 const StarText = ref(['啥也不是', '一般情况', '还不错', '纳爱斯', '力挺'])
 const Starcolors = ref(['#409eff', '#67c23a', '#FF9900'])
@@ -19,14 +23,71 @@ const loveFn = () => {
   }
 }
 
-const replydata = computed(() => {
-  return [
-    { nickName: '111', content: '@莉莉小希染 我发现有人盗图！', smallFaceUrl: 'https://joeschmoe.io/api/v1/random', createTime: '2022/07/24' },
-    { nickName: '222', content: '@莉莉小希染 我发现有人盗图！', smallFaceUrl: 'https://joeschmoe.io/api/v1/random', createTime: '2022/06/24' },
-    { nickName: '333', content: '@莉莉小希染 我发现有人盗图！', smallFaceUrl: 'https://joeschmoe.io/api/v1/random', createTime: '2022/05/24' },
-    { nickName: '444', content: '@莉莉小希染 我发现有人盗图！', smallFaceUrl: 'https://joeschmoe.io/api/v1/random', createTime: '2022/04/24' }
+const replydata = ref(
+  [
+    {
+      uid: 1,
+      nickName: '梦落青训',
+      content: '@莉莉小希染 我发现有人盗图！',
+      avatar: 'https://joeschmoe.io/api/v1/random',
+      createTime: '2小时前',
+      replies: [
+        { uid: 5, nickName: '天山怡家', content: '@莉莉小希染 我发现有人盗图！', avatar: 'https://joeschmoe.io/api/v1/random', createTime: '2小时前' },
+        { uid: 6, nickName: '欢乐七天', content: '@莉莉小希染 我发现有人盗图！', avatar: 'https://joeschmoe.io/api/v1/random', createTime: '2小时前' }
+      ]
+    },
+    { uid: 2, nickName: '笑哭在家', content: '@莉莉小希染 我发现有人盗图！', avatar: 'https://joeschmoe.io/api/v1/random', createTime: '2小时前' },
+    { uid: 3, nickName: '金福堂', content: '@莉莉小希染 我发现有人盗图！', avatar: 'https://joeschmoe.io/api/v1/random', createTime: '2小时前' },
+    { uid: 4, nickName: '真武库', content: '@莉莉小希染 我发现有人盗图！', avatar: 'https://joeschmoe.io/api/v1/random', createTime: '2小时前' }
   ]
+)
+// 作品编号
+const params = reactive({
+  projectId: 1
 })
+
+const getAllComments = async () => {
+  const res = await getReply(params).finally()
+  replydata.value = await res.Data.list
+}
+
+onMounted(() => {
+  getAllComments()
+})
+
+const id = ref(6)
+const constructNewComment = (messageForm: any) => {
+  console.log(messageForm)
+  return {
+    uid: id.value++,
+    nickName: '卢小豆',
+    content: messageForm,
+    avatar: 'https://joeschmoe.io/api/v1/random',
+    createTime: '2小时前'
+  }
+}
+
+const addNewComment = async (messageForm: String, replyTo: any) => {
+  const newComment = constructNewComment(messageForm)
+  replydata.value.unshift(newComment)
+  // const res = await getReply(params).finally()
+  // console.log(res)
+  // 新增完评论后，自动获取新的评论列表
+  // Notion API 有延迟，在添加完 page 之后，需要过一会才能获取到新的评论列表
+  // setTimeout(async () => {
+  //   await getAllComments()
+  // }, 1000)
+}
+
+const addReply = (messageForm: String, uid: Number) => {
+  const newreply = constructNewComment(messageForm)
+  const comment = replydata.value.find((comment) => comment.uid === uid)
+  if (comment.replies) {
+    comment.replies.push(constructNewComment(messageForm))
+  } else {
+    comment.replies = [newreply]
+  }
+}
 
 const CollectFn = () => {
   Collect.value ? Collect.value = false : Collect.value = true
@@ -51,7 +112,7 @@ const copy = () => {
     <nav style="display: flex;">
       <span>当前位置：</span>
       <AppBreadcrumb />
-      <span>{{ $route.params.id }}</span>
+      <span>5</span>
     </nav>
     <h1 class="p-article-title">
       免费本地SVG图标管理器Icon Shelf
@@ -109,11 +170,20 @@ const copy = () => {
       <div class="slides">
         <div class="box slide-left">
           <div
-            class="slide on"
+            class="slide"
           >
-            <img
+            <iframe
+              src="../../../../public/scratch3/player.html?workUrl=https://open.qn.teaching.vip/project3/fff2d0a0-948c-4c58-ab2d-229994818a3f.sb3"
+              width="100%"
+              height="100%"
+              allowtransparency="true"
+              frameborder="0"
+              scrolling="no"
+              allowfullscreen
+            />
+            <!-- <img
               src="@public/images/1400_902_8be26809677c4e649d162ce1df474803.jpg"
-            >
+            > -->
           </div>
           <img
             class="scratch3-tag"
@@ -254,29 +324,42 @@ const copy = () => {
     </div>
     <div class="p-article-message">
       <div class="comment-head">
-        留言：<span style="font-size: 12px;color: #666666;">(100)</span>
+        留言：
       </div>
       <div class="comment-add-box">
-        <AppEmoji />
+        <!-- 留言输入框 -->
+        <app-leave-message @submit="addNewComment" />
+        <!-- <AppEmoji /> -->
       </div>
     </div>
     <div class="p-article-reply-card-list">
+      <!-- 分割线 -->
+      <divider-horizontal />
       <div
-        class="reply-head"
-        style="padding: 0 30%;"
+        class="card-list"
+        v-for="item in replydata"
+        :key="item.uid"
       >
-        <el-divider
-          content-position="center"
-          border-style="dashed"
-        >
-          实时评论
-        </el-divider>
-      </div>
-      <div class="card-list">
-        <AppCardComment
-          :padding="60"
-          :datalist="replydata"
+        <!-- 留言 -->
+        <comment-item
+          :nick-name="item.nickName"
+          :avatar="item.avatar"
+          :content="item.content"
+          :create-time="item.createTime"
         />
+        <!-- 留言列表 -->
+        <reply-container v-if="item.replies">
+          <comment-item
+            v-for="reply in item.replies"
+            :key="reply.uid"
+            :nick-name="reply.nickName"
+            :avatar="reply.avatar"
+            :create-time="reply.createTime"
+            :content="reply.content"
+          />
+        </reply-container>
+        <!-- 回复 -->
+        <reply-box @submit="addReply($event, item.uid)" />
       </div>
     </div>
     <div class="recommend">
@@ -397,6 +480,6 @@ const copy = () => {
 </template>
 <style lang='scss' scoped>
 .card-list{
-  margin-top: 60px;
+  margin-top: 20px;
 }
 </style>

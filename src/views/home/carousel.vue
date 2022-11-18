@@ -3,7 +3,7 @@
  * @Filename: '首页 顶部 第一部分 跑马灯'
  * @Author: 小豆
  * @Date: 2022-09-16 15:35:14
- * @LastEditTime: 2022-10-03 09:57:43
+ * @LastEditTime: 2022-11-17 17:49:58
 -->
 <script lang="ts" setup>
 const znList = [
@@ -16,7 +16,7 @@ const znList = [
 <template>
   <div class="list1">
     <section class="container">
-      <ul>
+      <ul class="pd-20">
         <li>
           <div class="img img-loaded">
             <el-carousel

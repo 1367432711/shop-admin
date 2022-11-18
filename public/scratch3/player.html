@@ -1,0 +1,97 @@
+<!--
+ * @FilePath: \shop-admin\public\scratch3\player.html
+ * @Filename: ''
+ * @Author: 小豆
+ * @Date: 2022-06-15 23:17:54
+ * @LastEditTime: 2022-10-27 21:54:06
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google" value="notranslate">
+  <link rel="shortcut icon" href="static/favicon.ico">
+  <title>EasyScratch 3.0: Player Example</title>
+  <style type="text/css">
+    .stop-all_stop-all_15h2t, .green-flag_green-flag_mk1Vo{
+      transition: 0.1s ease-out;
+      box-shadow: 0 2px 2px rgb(0 0 0 / 13%);
+    }
+  </style>
+  <script>
+    window.urlParams = function(paramName) {
+
+        var reg = new RegExp('[?&]' + paramName + '=([^&]*)[&]?', 'i')
+        var paramVal = window.location.search.match(reg)
+        return paramVal == null ? '' : decodeURIComponent(paramVal[1])
+    }
+
+    var workUrl = urlParams('workUrl')
+    console.log(workUrl)
+    window.scratchConfig = {
+      stageArea:{
+        scale: window.innerWidth / 480, //自适应屏幕尺寸
+        width: 480,
+        height: 360,
+        showControl: true, //是否显示舞台区控制按钮
+        fullscreenButton:{ //全屏按钮
+          show: false,
+          handleBeforeSetStageUnFull(){ //退出全屏前的操作
+            return true
+          },
+          handleBeforeSetStageFull(){ //全屏前的操作
+            return true
+          }
+        },
+        startButton:{ //开始按钮
+          show: true,
+          handleBeforeStart(){ //开始前的操作
+            return true
+          }
+        },
+        stopButton:{ // 停止按钮
+          show: true,
+          handleBeforeStop(){ //停止前的操作
+            return true
+          }
+        }
+      },
+      handleVmInitialized: (vm) => {
+        window.vm = vm
+      },
+      handleProjectLoaded: () => {
+        if(workUrl){
+          console.log(workUrl)
+          window.scratch.loadProject(workUrl, () => {
+            vm.runtime.start()
+          })
+        }else if(workId){
+          getWorkInfo(workId, function (info) {
+            window.scratch.loadProject(info.workFileKey_url, () => {
+              vm.runtime.start()
+            })
+          })
+        }
+      },
+      // handleProjectLoaded:() => {
+      // },
+    //   handleDefaultProjectLoaded:() => {
+    //   },
+      //默认项目地址,不需要修请删除本配置项
+      // defaultProjectURL: window.location.protocol+"//"+window.location.host +  "/static/project.sb3",
+    }
+  </script>
+</head>
+
+<body style="background-color: #fff;">
+  <div id="scratch">
+    <p>Loading……</p>
+  </div>
+<script type="text/javascript" src="lib.min.js"></script><script type="text/javascript" src="chunks/player.js"></script></body>
+<script>
+
+</script>
+
+</html>

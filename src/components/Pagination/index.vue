@@ -1,9 +1,16 @@
+<!--
+ * @FilePath: \shop-admin\src\components\Pagination\index.vue
+ * @Filename: ''
+ * @Author: 小豆
+ * @Date: 2022-09-29 07:33:31
+ * @LastEditTime: 2022-11-17 16:02:12
+-->
 <template>
   <el-pagination
     :current-page="props.page"
     :page-size="props.limit"
     layout="prev, pager, next"
-    :total="listCount"
+    :total="props.listCount"
     :page-sizes="20"
     @current-change="handleCurrentChange"
     @size-change="handleSizeChange"
@@ -20,7 +27,7 @@ const props = defineProps({
   },
   limit: { // 每页大小
     type: Number,
-    default: 10
+    default: 8
   },
   listCount: {
     type: Number,

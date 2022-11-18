@@ -3,7 +3,7 @@
  * @Author: 小豆
  * @Date: 2022-07-11 09:58:10
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2022-10-19 11:32:07
+ * @LastEditTime: 2022-11-17 17:28:35
 -->
 <template>
   <el-container style="height:100vh;">
@@ -13,17 +13,19 @@
       </el-header>
       <el-main>
         <el-scrollbar ref="scrollbarRef">
-          <router-view v-slot="{ Component, route }">
-            <transition
-              name="el-fade-in"
-              mode="out-in"
-            >
-              <component
-                :is="Component"
-                :key="route.path"
-              />
-            </transition>
-          </router-view>
+          <div class="common">
+            <router-view v-slot="{ Component, route }">
+              <transition
+                name="el-fade-in"
+                mode="out-in"
+              >
+                <component
+                  :is="Component"
+                  :key="route.path"
+                />
+              </transition>
+            </router-view>
+          </div>
           <el-footer>
             <AppFooter />
           </el-footer>
@@ -51,7 +53,10 @@ router.beforeEach((to, from) => {
 
 <style lang="scss" scoped>
 .el-main {
-  color: #333;
+  color: var(--el-color-black);
   --el-main-padding: 0;
+}
+.el-header{
+  padding: 0;
 }
 </style>

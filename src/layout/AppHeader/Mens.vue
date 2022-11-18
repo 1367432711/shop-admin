@@ -3,7 +3,7 @@
  * @Filename: ''
  * @Author: 小豆
  * @Date: 2022-09-15 19:26:51
- * @LastEditTime: 2022-09-16 15:07:14
+ * @LastEditTime: 2022-11-15 23:17:22
 -->
 <template>
   <el-menu
@@ -28,32 +28,37 @@ import { onMounted, ref } from 'vue'
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
-// const menus = router.getRoutes().filter(v => v.meta.menushow)[0].children
-const aa = ref()
-const menus:any = ref([])
-const handleQuery = async () => {
-  aa.value = router.getRoutes().filter(v => v.meta.menushow)[0].children
-  for (const a of aa.value) {
-    if (!a.children && !a.meta.IsHidden) {
-      menus.value.push(JSON.parse(JSON.stringify(a)) as never)
-    } else {
-      a.children = JSON.parse(JSON.stringify(a.children.filter((v: { meta: { IsHidden: any } }) => !v.meta.IsHidden)))
-      menus.value.push(JSON.parse(JSON.stringify(a)) as never)
-    }
-  }
+const menus = ref()
+const menusQuery = () => {
+  const a = router.getRoutes().filter(v => v.meta.menushow)[0].children
+  menus.value = a.filter(item => item.meta?.IsHidden !== true)
 }
 
+// const menus:any = ref([])
+// const handleQuery = async () => {
+//   aa.value = router.getRoutes().filter(v => v.meta.menushow)[0].children
+//   for (const a of aa.value) {
+//     if (!a.children && !a.meta.IsHidden) {
+//       menus.value.push(JSON.parse(JSON.stringify(a)) as never)
+//     } else {
+//       a.children = JSON.parse(JSON.stringify(a.children.filter((v: { meta: { IsHidden: any } }) => !v.meta.IsHidden)))
+//       menus.value.push(JSON.parse(JSON.stringify(a)) as never)
+//     }
+//   }
+// }
+
 onMounted(() => {
-  handleQuery()
+  menusQuery()
 })
 
 </script>
 
 <style lang="scss" scoped>
 .el-menu--horizontal{
-  border-bottom:0
+  border-bottom:none;
 }
 ::-webkit-scrollbar {
   display: none;
 }
+
 </style>

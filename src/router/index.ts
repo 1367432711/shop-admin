@@ -3,13 +3,13 @@
  * @Author: 小豆
  * @Date: 2022-07-11 09:58:10
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2022-10-19 11:35:01
+ * @LastEditTime: 2022-11-16 00:28:18
  */
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 import AppLayout from '@/layout/AppLayout.vue'
-import zixunRouter from './modules/zixun'
+import worksRouter from './modules/works'
 import jiaochengRouter from './modules/jiaocheng'
-import sucaiRouter from './modules/sucai'
+// import sucaiRouter from './modules/sucai'
 import nprogress from 'nprogress' // @types/nprogress
 import 'nprogress/nprogress.css'
 import { store } from '@/store'
@@ -26,17 +26,23 @@ const routes: RouteRecordRaw[] = [
       {
         path: '/index', // 默认子路由
         name: 'index',
-        component: () => import('../views/home/index.vue'),
+        component: () => import('@/views/home/index.vue'),
         meta: { title: '首页' }
       },
-      zixunRouter,
-      sucaiRouter,
+      {
+        path: '/courses', // 默认子路由
+        name: 'courses',
+        component: () => import('@/views/courses/index.vue'),
+        meta: { title: '课程' }
+      },
+      worksRouter,
+      // sucaiRouter,
       jiaochengRouter,
       {
         path: '/design-navigation',
         name: 'design',
         component: () => import('../views/design/index.vue'),
-        meta: { title: '设计导航', requiresAuth: false }
+        meta: { title: '设计导航', IsHidden: false }
       }
     ]
   },

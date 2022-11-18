@@ -3,7 +3,7 @@
  * @Filename: ''
  * @Author: 小豆
  * @Date: 2022-09-15 19:40:38
- * @LastEditTime: 2022-09-16 15:13:50
+ * @LastEditTime: 2022-10-29 15:52:04
 -->
 <template>
   <el-sub-menu
@@ -47,6 +47,13 @@ const menu = ref(props.menu)
 </script>
 
 <style lang="scss" scoped>
+.el-menu-item {
+  justify-content: center;
+}
+.el-menu--horizontal,.el-menu--horizontal>.el-menu-item,.el-menu--horizontal>.el-menu-item.is-active{
+  border-bottom: none;
+}
+
 // i.Ionicons {
 //   margin-right: 12px;
 // }
@@ -55,7 +62,7 @@ const menu = ref(props.menu)
 //   background-color: #1f2d3d !important;
 // }
 span{
-  font-size: 16px;
+  font-size: 17px;
 }
 .el-menu--horizontal .el-menu-item:not(.is-disabled):focus, .el-menu--horizontal .el-menu-item:not(.is-disabled):hover{
   background-color: var(--el-menu-bg-color) !important;

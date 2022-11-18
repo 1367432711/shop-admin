@@ -3,81 +3,92 @@
  * @Filename: ''
  * @Author: 小豆
  * @Date: 2022-07-11 09:58:10
- * @LastEditTime: 2022-10-03 10:14:49
+ * @LastEditTime: 2022-11-17 17:46:16
 -->
 <template>
   <page-container>
     <div class="i-list">
       <section class="container">
-        <AppChildCategories />
-        <div class="articles">
-          <ul>
-            <li
-              v-for="(item, key) in znList"
-              :key="key"
-            >
-              <div class="img img-loaded">
-                <router-link
-                  :to="`${routes}/project/${key}`"
-                  :title="item.title"
-                >
-                  <img
-                    :alt="item.title"
-                    lazy__=""
-                    :src="item.image"
-                  >
-                </router-link>
-              </div>
-              <div class="category">
-                <a href="https://ui.marklion.cn/c/zixun-shejizhinan/index.shtml">设计指南
-                </a>
-              </div>
-              <div class="text">
-                <a
-                  href="https://ui.marklion.cn/link.ashx?id=PRMmibYxl7fEvftaoDFShQ%3D%3D"
-                  :title="item.title"
-                  target="_blank"
-                  rel="noopener nofollow"
-                >{{ item.title }}</a>
-              </div>
-            </li>
-          </ul>
+        <div class="pd-20">
+          <app-child-categories
+            :datalist="Listsort"
+            :tageslist="tageslist"
+            @sort-change="hanleSortChange($event)"
+          />
+          <app-skeleton :loading="listLoading">
+            <div class="articles">
+              <app-work-card :workslist="list" />
+            </div>
+            <app-pagination
+              v-model:page="listParams.page"
+              v-model:limit="listParams.limit"
+              :list-count="total"
+              :load-list="loadList"
+              :disabled="listLoading"
+            />
+          </app-skeleton>
         </div>
-        <AppPagination />
       </section>
     </div>
   </page-container>
 </template>
 
 <script lang="ts" setup>
-import { computed } from '@vue/runtime-core'
-import { useRouter } from 'vue-router'
+import { ref, reactive, watch } from 'vue'
+import { getArticles } from '@/api/article'
 
-const router = useRouter()
+interface TitleItem {
+  id: Number
+  title: string
+}
+const Listsort = ref<TitleItem[]>([
+  { id: 1, title: '综合作品' },
+  { id: 2, title: '热门作品' },
+  { id: 3, title: '最新作品' }
+])
 
-const routes = computed(() => {
-  return router.currentRoute.value.matched.filter(item => item.meta.title)[0].path
+const tageslist = ref<TitleItem[]>([
+  { id: 1, title: '全部' },
+  { id: 2, title: '音乐' },
+  { id: 3, title: '动画' }
+])
+
+const list = ref<any>([]) // 列表数据
+const total = ref(0)
+const listLoading = ref(true)
+const listParams = reactive({ // 列表数据查询参数
+  page: 1, // 当前页码
+  limit: 16, // 每页大小
+  tag: '',
+  sort: ''
 })
-const znList = [
-  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '../../../../public/images/1280_880_ecd8f2482f6845e5a2c0d545c326196a.jpg' },
-  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '../../../../public/images/1280_880_ecd8f2482f6845e5a2c0d545c326196a.jpg' },
-  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '../../../../public/images/608_418_7cca8fdb80ad4af082e05568d810c6c5.png' },
-  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '../../../../public/images/1280_880_b126d683236049b7a75b22787202d738.jpg' },
-  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '../../../../public/images/608_418_7cca8fdb80ad4af082e05568d810c6c5.png' },
-  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '../../../../public/images/1280_880_b126d683236049b7a75b22787202d738.jpg' },
-  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '../../../../public/images/608_418_7cca8fdb80ad4af082e05568d810c6c5.png' },
-  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '../../../../public/images/1280_880_b126d683236049b7a75b22787202d738.jpg' },
-  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '../../../../public/images/608_418_7cca8fdb80ad4af082e05568d810c6c5.png' },
-  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '../../../../public/images/1280_880_b126d683236049b7a75b22787202d738.jpg' },
-  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '../../../../public/images/608_418_7cca8fdb80ad4af082e05568d810c6c5.png' },
-  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '../../../../public/images/1280_880_b126d683236049b7a75b22787202d738.jpg' },
-  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '../../../../public/images/608_418_7cca8fdb80ad4af082e05568d810c6c5.png' },
-  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '../../../../public/images/1280_880_b126d683236049b7a75b22787202d738.jpg' },
-  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '../../../../public/images/608_418_7cca8fdb80ad4af082e05568d810c6c5.png' },
-  { title: '3D很简单用Adobeillustrator 2022 3D功能做3D美食', image: '../../../../public/images/1280_880_b126d683236049b7a75b22787202d738.jpg' }
-]
-// const GotoArticle = (key:Number) => {
-//   router.push()
-// }
+
+const loadList = async () => {
+  listLoading.value = true
+  const data = await getArticles(listParams).finally(() => {
+    listLoading.value = false
+  })
+  data.list.forEach((item: { statusLoading: boolean; }) => {
+    item.statusLoading = false // 控制切换状态的 loading 效果
+  })
+  list.value = data.list
+  total.value = data.total
+}
+
+watch(() => [listParams.tag, listParams.sort], (newVal, oldVal) => {
+  console.log('新的值----', newVal)
+  console.log('旧的值----', oldVal)
+  loadList()
+})
+
+const hanleSortChange = (payload: any) => {
+  console.log(payload)
+  listParams.tag = payload[0]
+  listParams.sort = payload[1]
+  listParams.page = 1
+  // loadList()
+}
+
 </script>
-<style lang="scss" scoped > </style>
+<style lang="scss" scoped >
+</style>

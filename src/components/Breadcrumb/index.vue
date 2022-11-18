@@ -3,7 +3,7 @@
  * @Filename: ''
  * @Author: 小豆
  * @Date: 2022-07-17 14:55:01
- * @LastEditTime: 2022-07-20 16:31:03
+ * @LastEditTime: 2022-11-16 00:38:25
 -->
 <template>
   <el-breadcrumb separator-class="el-icon-arrow-right">
@@ -25,9 +25,11 @@ import { computed } from '@vue/runtime-core'
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
+
 const routes = computed(() => {
   return router.currentRoute.value.matched.filter(item => item.meta.title)
 })
+console.log(router.currentRoute.value.matched)
 </script>
 
 <style lang="scss" scoped></style>

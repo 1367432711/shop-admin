@@ -4,13 +4,15 @@
  * @Author: 小豆
  * @Date: 2022-07-11 09:58:10
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2022-09-16 14:31:56
+ * @LastEditTime: 2022-11-16 00:42:52
 -->
 <template>
   <el-container class="container">
     <div class="navs">
-      <ToggleSidebar />
-      <Mens />
+      <div class="navs-mun">
+        <ToggleSidebar />
+        <Mens />
+      </div>
       <form action="https://ui.marklion.cn/search.ashx">
         <MenuSearch />
       </form>
@@ -22,7 +24,7 @@
 <script lang="ts" setup>
 import ToggleSidebar from './ToggleSidebar.vue'
 // import Breadcrumb from './Breadcrumb.vue'
-import Mens from './Mens.vue'
+import Mens from './Menusback.vue'
 import MenuSearch from './MenuSearch.vue'
 // import FullScreen from './FullScreen.vue'
 // import Notification from './Notification.vue'
@@ -34,4 +36,9 @@ i {
   font-size: 19px;
   cursor: pointer;
 }
+.navs .navs-mun{
+  display: flex;
+  align-items: center;
+}
+
 </style>
