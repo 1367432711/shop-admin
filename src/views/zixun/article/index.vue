@@ -3,7 +3,7 @@
  * @Filename: ''
  * @Author: 小豆
  * @Date: 2022-07-16 20:38:27
- * @LastEditTime: 2022-11-18 11:28:02
+ * @LastEditTime: 2022-11-19 23:10:30
 -->
 <template>
   <page-container>
@@ -40,6 +40,36 @@
           <div class="entry-content">
             www
           </div>
+          <div class="entry-tag">
+            <el-link :underline="false">
+              Tag 1
+            </el-link>
+            <el-link :underline="false">
+              Tag 2
+            </el-link>
+          </div>
+          <div class="entry-action">
+            <el-button
+              type="primary"
+              plain
+              size="large"
+            >
+              <app-icon
+                class="iconfont iconpraise_fill"
+                color="var(--el-color-primary)"
+                size="18"
+              />
+              赞 ( 0 )
+            </el-button>
+            <el-button
+              type="primary"
+              plain
+              size="large"
+              icon="Ticket"
+            >
+              打赏
+            </el-button>
+          </div>
         </el-col>
         <el-col
           class="entry-page"
@@ -67,27 +97,65 @@ defineProps({
   background: var(--el-bg-color);
   width: 860px;
 }
-.article-main .entry-main, .article-main .entry-head, .article-main .entry-head .entry-title,.article-main .entry-page{
+.article-main .entry-main, .article-main .entry-main .entry-head, .article-main .entry-main .entry-head .entry-title,.article-main .entry-page{
   margin-bottom: 20px;
 }
 .article-main .entry-main{
   padding: 20px;
 }
-.article-main .entry-head .entry-title{
+.entry-main .entry-head .entry-title{
   margin-top: 0;
   font-size: 24px;
   line-height: 1.4;
 }
-.article-main .entry-head .entry-info {
+.entry-main .entry-head .entry-info {
   padding-bottom: 10px;
   color: var(--el-text-color-secondary);
 }
-.article-main .entry-content{
+.entry-main .entry-content{
   position: relative;
   margin-bottom: 30px;
   font-size: 16px;
   color: var(--el-text-color-primary);
   line-height: 1.8;
+}
+.entry-main .entry-tag .el-link{
+  margin: 0 10px 5px 0;
+  padding: 5px 10px 4px 0;
+  line-height: 14px;
+  border-radius: 20px;
+  color: var(--el-text-color-primary);
+  background: var(--el-color-info-light-8);
+}
+.entry-main .entry-tag .el-link:hover{
+  color: #fff;
+  background: var(--el-color-primary);
+}
+.entry-main .entry-tag .el-link:before {
+    margin: -4px 6px -4px 0;
+    padding: 4px 7px;
+    line-height: inherit;
+    color: #fff;
+    background: var(--el-color-primary);
+    content: "#";
+    vertical-align: top;
+    font-size: 14px;
+    border-radius: 20px;
+}
+.entry-main .entry-action{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.entry-main .entry-action .el-button .Ionicons{
+  margin: 0 8px 0 0;
+}
+.entry-main .entry-action .el-button:hover .Ionicons{
+  color: #fff !important;
+}
+.el-button--primary.is-plain {
+  font-size: 18px;
+  line-height: 22px;
 }
 .article-main .entry-page{
   overflow: hidden;

@@ -1339,3 +1339,9 @@ body .el-footer .footer a:hover {
   border-radius: 20px;
 }
 // 作品页面 分类筛选单选框 结束
+
+// 设置el-button plain按钮未选中的背景颜色为白色 开始
+.el-button--primary.is-plain{
+  --el-button-bg-color: var(--el-color-primary-rgb);
+}
+// 设置el-button plain按钮未选中的背景颜色为白色 结束
