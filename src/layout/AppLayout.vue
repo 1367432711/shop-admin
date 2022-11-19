@@ -13,19 +13,17 @@
       </el-header>
       <el-main>
         <el-scrollbar ref="scrollbarRef">
-          <div class="common">
-            <router-view v-slot="{ Component, route }">
-              <transition
-                name="el-fade-in"
-                mode="out-in"
-              >
-                <component
-                  :is="Component"
-                  :key="route.path"
-                />
-              </transition>
-            </router-view>
-          </div>
+          <router-view v-slot="{ Component, route }">
+            <transition
+              name="el-fade-in"
+              mode="out-in"
+            >
+              <component
+                :is="Component"
+                :key="route.path"
+              />
+            </transition>
+          </router-view>
           <el-footer>
             <AppFooter />
           </el-footer>

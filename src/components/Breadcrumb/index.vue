@@ -32,4 +32,8 @@ const routes = computed(() => {
 console.log(router.currentRoute.value.matched)
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.el-breadcrumb{
+  margin-bottom: 20px;
+}
+</style>

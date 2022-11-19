@@ -8,23 +8,57 @@
 <template>
   <page-container>
     <TopCarousel />
-    <div class="list4">
-      <section class="container">
-        <div class="pd-20">
-          <div class="categoriy-title">
-            <span>素材</span>
-            <el-link :underline="false">
-              查看更多&gt;
-            </el-link>
-          </div>
+    <section class="container">
+      <app-sec-panel>
+        <template #SecPanelHead>
+          <span>素材</span>
+          <el-link :underline="false">
+            查看更多&gt;
+          </el-link>
+        </template>
+        <template #SecPanelBody>
           <app-skeleton :loading="listLoading">
             <div class="articles">
               <app-work-card :workslist="list" />
             </div>
           </app-skeleton>
-        </div>
-      </section>
-    </div>
+        </template>
+      </app-sec-panel>
+    </section>
+    <section class="container">
+      <app-sec-panel>
+        <template #SecPanelHead>
+          <span>素材</span>
+          <el-link :underline="false">
+            查看更多&gt;
+          </el-link>
+        </template>
+        <template #SecPanelBody>
+          <app-skeleton :loading="listLoading">
+            <div class="articles">
+              <app-work-card :workslist="list" />
+            </div>
+          </app-skeleton>
+        </template>
+      </app-sec-panel>
+    </section>
+    <section class="container">
+      <app-sec-panel>
+        <template #SecPanelHead>
+          <span>素材</span>
+          <el-link :underline="false">
+            查看更多&gt;
+          </el-link>
+        </template>
+        <template #SecPanelBody>
+          <app-skeleton :loading="listLoading">
+            <div class="articles">
+              <app-work-card :workslist="list" />
+            </div>
+          </app-skeleton>
+        </template>
+      </app-sec-panel>
+    </section>
     <div class="c-banner">
       <section class="container">
         <div class="name">
@@ -42,23 +76,6 @@
         </div>
       </section>
     </div>
-    <div class="list4">
-      <section class="container">
-        <div class="pd-20">
-          <div class="categoriy-title">
-            <span>素材</span>
-            <el-link :underline="false">
-              查看更多&gt;
-            </el-link>
-          </div>
-          <app-skeleton :loading="listLoading">
-            <div class="articles">
-              <app-work-card :workslist="list" />
-            </div>
-          </app-skeleton>
-        </div>
-      </section>
-    </div>
   </page-container>
 </template>
 
@@ -71,7 +88,7 @@ const total = ref(0)
 const listLoading = ref(true)
 const listParams = reactive({ // 列表数据查询参数
   page: 1, // 当前页码
-  limit: 8, // 每页大小
+  limit: 4, // 每页大小
   tag: '',
   sort: ''
 })

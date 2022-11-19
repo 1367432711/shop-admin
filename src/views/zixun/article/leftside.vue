@@ -109,6 +109,9 @@ const copy = () => {
 </script>
 <template>
   <div class="leftside">
+    <div class="entry-main">
+      11111
+    </div>
     <nav style="display: flex;">
       <span>当前位置：</span>
       <AppBreadcrumb />
@@ -181,9 +184,6 @@ const copy = () => {
               scrolling="no"
               allowfullscreen
             />
-            <!-- <img
-              src="@public/images/1400_902_8be26809677c4e649d162ce1df474803.jpg"
-            > -->
           </div>
           <img
             class="scratch3-tag"
@@ -481,5 +481,10 @@ const copy = () => {
 <style lang='scss' scoped>
 .card-list{
   margin-top: 20px;
+}
+.leftside .entry-main{
+  background: var(--el-bg-color);
+  padding: 20px;
+  margin-bottom: 20px;
 }
 </style>

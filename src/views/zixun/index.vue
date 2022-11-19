@@ -9,25 +9,29 @@
   <page-container>
     <div class="i-list">
       <section class="container">
-        <div class="pd-20">
-          <app-child-categories
-            :datalist="Listsort"
-            :tageslist="tageslist"
-            @sort-change="hanleSortChange($event)"
-          />
-          <app-skeleton :loading="listLoading">
-            <div class="articles">
-              <app-work-card :workslist="list" />
-            </div>
-            <app-pagination
-              v-model:page="listParams.page"
-              v-model:limit="listParams.limit"
-              :list-count="total"
-              :load-list="loadList"
-              :disabled="listLoading"
+        <app-sec-panel>
+          <template #SecPanelHeadSort>
+            <app-child-categories
+              :datalist="Listsort"
+              :tageslist="tageslist"
+              @sort-change="hanleSortChange($event)"
             />
-          </app-skeleton>
-        </div>
+          </template>
+          <template #SecPanelBody>
+            <app-skeleton :loading="listLoading">
+              <div class="articles">
+                <app-work-card :workslist="list" />
+              </div>
+              <app-pagination
+                v-model:page="listParams.page"
+                v-model:limit="listParams.limit"
+                :list-count="total"
+                :load-list="loadList"
+                :disabled="listLoading"
+              />
+            </app-skeleton>
+          </template>
+        </app-sec-panel>
       </section>
     </div>
   </page-container>

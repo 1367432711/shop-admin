@@ -18,8 +18,8 @@
   :deep(.content-space__item) {
     width: 100%;
   }
-  :deep(.content-space__item:last-child) {
-    padding-bottom: unset !important;
+  :deep(.content-space__item:first-child) {
+    padding-top: 20px !important;
   }
 }
 </style>
